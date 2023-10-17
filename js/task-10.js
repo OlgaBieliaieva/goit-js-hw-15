@@ -16,8 +16,8 @@ refs.destroyBtn.addEventListener('click', destroyBoxes);
 
 function createBoxes(amount) {
   amount = refs.input.value;
-  let height = 20;
-  let width = 20;
+  let height = 30;
+  let width = 30;
   
   const boxArray = new Array(Number(amount)).fill(1);
   
