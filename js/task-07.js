@@ -3,7 +3,8 @@ const refs = {
   spanTest: document.querySelector("#text"),
 };
 
-refs.inputRange.addEventListener("click", onInputRangeClick);
+refs.spanTest.style.fontSize = `${refs.inputRange.value}px`;
+refs.inputRange.addEventListener("input", onInputRangeClick);
 
 function onInputRangeClick(event) {
   refs.spanTest.style.fontSize = `${event.currentTarget.value}px`;

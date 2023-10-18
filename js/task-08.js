@@ -16,7 +16,7 @@ function onFormSubmit(event) {
     formDataObj.password = password.value;
     console.log(formDataObj);
   } else {
-    alert(`Fill in all fields, please`);
+    return alert(`Fill in all fields, please`);
   }
 
   form.reset();
